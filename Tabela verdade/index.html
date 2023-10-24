@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./src/index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Atividade IA</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Atividade IA</h1>
+        <div class="operators-wrapper">
+            <div>
+                <label for="not-symbol">Negação</label><br/>
+                <input type="radio" name="not-symbol" id="user-input" class="logic-operator-option">
+            </div>
+            <div>
+                <label for="and-symbol">E</label><br/>
+                <input type="radio" name="and-symbol" id="user-input" class="logic-operator-option">
+            </div>
+            <div>
+                <label for="or-symbol">Ou</label><br/>
+                <input type="radio" name="or-symbol" id="user-input" class="logic-operator-option">
+            </div>
+            <div>
+                <label for="conditional-symbol">Condicional</label><br/>
+                <input type="radio" name="conditional-symbol" id="user-input" class="logic-operator-option">
+            </div>
+            <div>
+                <label for="biconditional-symbol">Bicondicional</label><br/>
+                <input type="radio" name="biconditional-symbol" id="user-input" class="logic-operator-option">
+            </div>
+            <div> 
+                <label for="if-and-only-if-symbol">XOR</label><br/>
+                <input type="radio" name="if-and-only-if-symbol" id="user-input" class="logic-operator-option">
+            </div>
+        </div>
+        <div class="table-wrapper">
+            <table class="table">
+                <tr>
+                    <th>P</th>
+                    <th>Q</th>
+                    <th id="chosen-operator"></th>
+                </tr>
+                <tr>
+                    <td id="row1-col1">V</td>
+                    <td id="row1-col2">V</td>
+                    <td class="result"></td>
+                </tr>
+                <tr>
+                    <td id="row2-col1">F</td>
+                    <td id="row2-col2">F</td>
+                    <td class="result"></td>
+                </tr>
+                <tr>
+                    <td id="row3-col1">V</td>
+                    <td id="row3-col2">F</td>
+                    <td class="result"></td>
+                </tr>
+                <tr>
+                    <td id="row4-col1">F</td>
+                    <td id="row4-col2">V</td>
+                    <td class="result"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="activityTwoDiv">
+            <h2>1. Se não choveu, Mario surfou</h2>
+            <h2>2. Mario surfou ou correu, mas não os dois</h2>
+            <h2>3. Mario correu</h2>
+            <h2 id="assertionFour"></h2>
+            <h2 id="assertionFive"></h2>
+            <button id="solveActivityTwo">Resolver</button>
+        </div>
+    </main>
+</body>
+</html>
